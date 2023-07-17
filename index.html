@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Password Generator</title>
+</head>
+<body>
+
+    <div class="container">
+        <p>PASSWORD GENERATOR TOOL</p>
+        <h1>Need a Unique,<br/> <span>Secure Password?</span></h1>
+        <div class="display">
+            <input type="text" id="Password" placeholder="Password">
+            <img src="/images/copy.png" onclick="openPopup()" >
+            
+        </div>
+        <button onclick="createPassword()"> <img src="/images/generate.png"> Generate Password</button>
+    </div>
+    <div class="popup" id="popup">
+        <img src="/images/secure-password.png" alt="">
+        <h1>Password copied to clipboard</h1>
+        <p>To paste the password someplace else, press <span>CTRL + V</span> on your keyboard.</p>
+        <button type="button" onclick="closePopup()">OK</button>
+    </div>
+    
+    <script src="/script.js"></script>
+
+</body>
+</html>
